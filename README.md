@@ -3,3 +3,6 @@ Aprenda HTML5, CSS3 e SEO de forma simples, prática e objetiva, desenvolvendo p
 ## Links indicados
 ### Planejamento
 [cetic](https://www.cetic.br/)
+### Wireframe
+### Tipografia
+### Imagens
