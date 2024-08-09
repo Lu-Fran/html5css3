@@ -22,73 +22,216 @@ body {
   font-size: 1.6rem;
 }
 
-/* Layout */
+/* Global layout */
 .container {
   margin: 0 auto;
-  background-color: #7f0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a9a9a9;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  background-color: #c00000;
+  padding: 1rem 4rem;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
 }
 
 h1 {
   font-size: 2.6rem;
-  color: #252525;
+  color: #fff;
 }
 
 h2 {
   font-size: 2.3rem;
-  color: #2e2e2e;
+  color: #fff;
+  margin: 2rem 0rem 2rem 0rem;
 }
 
 h3 {
   font-size: 1.9rem;
-  color: #383838;
+  color: #000;
 }
 
 /* Smartpone Portrait */
+/* Cabeçalho */
+header {
+  height: 5rem;
+}
+
+#logo img {
+  width: 10rem;
+  height: 10rem;
+}
+
+#check {
+  display: none;
+}
+
+label {
+  font-size: 4rem;
+  padding-right: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #252525;
+  height: 100vh;
+  position: fixed;
+  top: 5rem;
+  width: 70vw;
+  right: -100%;
+  transition: all 0.5s;
+}
+
+#check:checked ~ ul {
+  right: 0;
+}
+
+nav ul li {
+  padding: 2rem;
+  border-bottom: 0.1rem solid #a9a9a9;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  height: 75vh;
+  background: url(/Img/banner.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
 /* Smartpone Landscape*/
 @media (min-width: 576px) {
-  body {
-    background-color: #0ff;
-  }
-
   /* Layout */
   .container {
     max-width: 540px;
+  }
+
+  /* Destaque */
+  main h1,
+  main h2 {
+    text-shadow: #000 0.25rem 0.25rem 0.25rem;
   }
 }
 
 /* Tablet Portrait */
 @media (min-width: 768px) {
-  body {
-    background-color: #ff0;
-  }
-
   /* Layout */
   .container {
     max-width: 720px;
+  }
+
+  /* Destaque */
+  main {
+    height: 45vh;
+  }
+
+  main h1,
+  main h2 {
+    text-shadow: #000 0.25rem 0.25rem 0.25rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
   }
 }
 
 /* Tablet Landscape*/
 @media (min-width: 992px) {
-  body {
-    background-color: #ff6600;
-  }
-
   /* Layout */
   .container {
     max-width: 960px;
+  }
+
+  /* Destaque */
+  main h1,
+  main h2 {
+    text-shadow: #000 0.25rem 0.25rem 0.25rem;
+  }
+
+  main {
+    height: 70vh;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
   }
 }
 
 /* PC */
 @media (min-width: 1200px) {
-  body {
-    background-color: #ff0000;
-  }
-
   /* Layout */
   .container {
     max-width: 1140px;
   }
+
+  /* Cabeçalho */
+  header {
+    height: 7rem;
+  }
+
+  #logo img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  label {
+    display: none;
+  }
+
+  nav ul {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top: 2rem;
+  }
+
+  nav ul li {
+    float: inline-start;
+    border: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    color: #343538;
+  }
+
+  nav ul li a:hover {
+    color: #ff0000;
+  }
+
+  /* Destaque */
+  main h1,
+  main h2 {
+    text-shadow: #000 0.25rem 0.25rem 0.25rem;
+  }
+}
+
+/* Footer */
+.topoSite {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
 }

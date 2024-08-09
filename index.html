@@ -17,8 +17,22 @@
   </head>
   <body>
     <!-- Cabeçalho -->
-    <header>
-      <div class="container"></div>
+    <header id="inicio">
+      <div class="container flex">
+        <div id="logo">
+          <img src="/Img/favicon.png" alt="hal 9000" />
+        </div>
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check">&#61;</label>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Conteúdo principal -->
@@ -26,11 +40,17 @@
       <div class="container">
         <h1>HTML5 e CSS3</h1>
         <h2>Você vê. Você faz. Você aprende.</h2>
+        <a
+          href="https://www.instagram.com/p/C93WW41IDV5/"
+          target="_blank"
+          class="btn"
+          >Sobre site Responsivo</a
+        >
       </div>
     </main>
 
     <!-- Sobre -->
-    <section>
+    <section id="sobre">
       <div class="container">
         <h2>Aprender na prática.</h2>
       </div>
@@ -51,7 +71,7 @@
     </section>
 
     <!-- Conteúdo -->
-    <section>
+    <section id="conteudo">
       <div class="container">
         <h2>Conteúdo</h2>
         <h3>HTML5</h3>
@@ -61,8 +81,12 @@
     </section>
 
     <!-- Rodapé -->
-    <footer>
+    <footer id="contato">
       <div class="container"></div>
     </footer>
+
+    <a href="#inicio" class="topoSite"
+      ><img src="/Img/topo.png" alt="topo do site"
+    /></a>
   </body>
 </html>
